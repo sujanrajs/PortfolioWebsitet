@@ -1,5 +1,245 @@
-h1 {
-  color: goldenrod;
+* {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  align-items: center;
+  padding: 20px 50px;
+}
+header img {
+  width: 50px;
+  height: 50px;
+}
+header nav {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav li {
+  display: inline-block;
+}
+header nav a {
+  padding-left: 20px;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: yellowgreen;
+}
+
+main {
+  display: grid;
+}
+main .introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+main .introduction article {
+  padding-right: 20px;
+}
+main .introduction article h1,
+main .introduction article p {
+  text-align: left;
+  font-size: 26px;
+}
+main .introduction img {
+  height: 400px;
+  width: 600px;
+}
+main .scroll-down {
+  padding: 20px 50px;
+  height: 20px;
+}
+main .scroll-down img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+main .scroll-down .bounce {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+main .services {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 50px;
+}
+main .services h1 {
+  margin-bottom: 25px;
+  font-size: 36px;
+  border-bottom: 2px solid;
+}
+main .services .inside-services {
+  display: flex;
+  gap: 50px;
+}
+main .services .inside-services article {
+  border: 2px;
+  border-style: solid;
+  height: 500px;
+  width: auto;
+  text-align: left;
+}
+main .services .inside-services article h2 {
+  font-size: 26px;
+  margin: 25px 0px 25px 25px;
+}
+main .services .inside-services article p {
+  margin: 25px 25px 25px 25px;
+  font-size: 20px;
+}
+main .services .inside-services article a {
+  text-decoration: none;
+  margin: 25px 0px 25px 25px;
+  font-size: 20px;
+}
+main .techstack {
+  display: grid;
+  justify-content: center;
+  padding: 20px 50px;
+}
+main .techstack h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 36px;
+  border-bottom: 2px solid;
+}
+main .techstack .techstack-icons {
+  display: flex;
+  gap: 150px;
+  width: auto;
+  padding: 20px 0px 20px 0px;
+}
+main .techstack .techstack-icons .fab {
+  font-size: 60px;
+}
+main .blogs {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 50px;
+}
+main .blogs img {
+  height: 400px;
+  width: 400px;
+}
+main .blogs h1 {
+  text-align: center;
+  font-size: 36px;
+  border-bottom: 2px solid;
+}
+main .blogs .blog1,
+main .blogs .blog2,
+main .blogs .blog3 {
+  display: flex;
+}
+main .blogs .blog1 article,
+main .blogs .blog2 article,
+main .blogs .blog3 article {
+  margin: 20px 20px 20px 20px;
+}
+main .blogs .blog1 article h2,
+main .blogs .blog1 article h3,
+main .blogs .blog1 article p,
+main .blogs .blog1 article a,
+main .blogs .blog2 article h2,
+main .blogs .blog2 article h3,
+main .blogs .blog2 article p,
+main .blogs .blog2 article a,
+main .blogs .blog3 article h2,
+main .blogs .blog3 article h3,
+main .blogs .blog3 article p,
+main .blogs .blog3 article a {
+  text-align: left;
+  margin: 20px 20px 20px 20px;
+}
+main .blogs .blog1 article h2,
+main .blogs .blog2 article h2,
+main .blogs .blog3 article h2 {
+  font-size: 26px;
+}
+main .blogs .blog1 article h3,
+main .blogs .blog2 article h3,
+main .blogs .blog3 article h3 {
+  font-size: 20px;
+}
+main .blogs .blog1 article p,
+main .blogs .blog1 article a,
+main .blogs .blog2 article p,
+main .blogs .blog2 article a,
+main .blogs .blog3 article p,
+main .blogs .blog3 article a {
+  font-size: 20px;
+  text-decoration: none;
+}
+main .contactus {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px 50px;
+  font-size: 20px;
+}
+main .contactus h1 {
+  border-bottom: 2px solid;
+}
+main .contactus input[type=text],
+main .contactus select,
+main .contactus textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  resize: vertical;
+  width: 400px;
+}
+main .btn {
+  margin-top: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+footer .socialmedia {
+  display: flex;
+  gap: 20px;
+}
+footer .socialmedia .fab {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

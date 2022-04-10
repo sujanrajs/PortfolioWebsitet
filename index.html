@@ -1,23 +1,212 @@
-<!-- Please copy your HTML from the ac11y lesson to here 
-   and do some styling to it. using Flex-box and Grid.
-   PS: keep your styling simple and don't spend too much time figuring out what colors, fonts etc-->
-
-<!-- please install sass globally by running this command
-   npm install -g sass
-
-   then run this in your terminal: sass:watch or npm run sass:watch
-   now you can type in style.scss and it will compile it automatically to style.css-->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cc4be81cad.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/png" href="#" />
     <title>Portfolio</title>
   </head>
   <body>
-    <h1>Welcome to CSS assignment!</h1>
+    <header>
+      <figure>
+        <a href="#"><img src="./assets/images/logo.jpeg" alt="logo" /></a>
+      </figure>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="./Blogs/blog.html">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="introduction">
+        <article>
+          <h1>Hello !!</h1>
+          <p>
+            A warm welcome to my Portfolio. My full name is Sujan Raj Shrestha.
+            You can call me Sujan. I am student at Integrify, Helsinki Finland.
+            Please feel free to explore my portfolio. &#128512;
+          </p>
+        </article>
+        <figure>
+          <img src="./assets/images/img-1.jpg" alt="image" />
+        </figure>
+      </section>
+      <section class="scroll-down">
+        <div class="box bounce">
+          <img src="./assets/images/arrow.svg" alt="bouncing arrow" />
+        </div>
+      </section>
+      <section class="services">
+        <h1>Services</h1>
+        <section class="inside-services">
+          <article>
+            <h2>Web Dev</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+              tempora saepe amet perspiciatis accusantium vel maiores ratione
+              consectetur harum? Quo incidunt nulla dolorem sequi dolorum
+              officiis a tempora necessitatibus! Repudiandae. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Voluptates porro est
+              reiciendis accusantium neque exercitationem consequatur dolorem
+              eveniet sit, pariatur molestias. Numquam iste, minus in animi
+              temporibus quia facere quos.
+            </p>
+            <a href="#" target="_blank">Read More..</a>
+          </article>
+          <article>
+            <h2>Android App Dev</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+              tempora saepe amet perspiciatis accusantium vel maiores ratione
+              consectetur harum? Quo incidunt nulla dolorem sequi dolorum
+              officiis a tempora necessitatibus! Repudiandae. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Voluptates porro est
+              reiciendis accusantium neque exercitationem consequatur dolorem
+              eveniet sit, pariatur molestias. Numquam iste, minus in animi
+              temporibus quia facere quos.
+            </p>
+            <a href="#" target="_blank">Read More..</a>
+          </article>
+          <article>
+            <h2>iOS App Dev</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+              tempora saepe amet perspiciatis accusantium vel maiores ratione
+              consectetur harum? Quo incidunt nulla dolorem sequi dolorum
+              officiis a tempora necessitatibus! Repudiandae. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Voluptates porro est
+              reiciendis accusantium neque exercitationem consequatur dolorem
+              eveniet sit, pariatur molestias. Numquam iste, minus in animi
+              temporibus quia facere quos.
+            </p>
+            <a href="#" target="_blank">Read More..</a>
+          </article>
+        </section>
+      </section>
+      <section class="techstack">
+        <h1>Tech Stacks</h1>
+        <section class="techstack-icons">
+          <i class="fab fa-js"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-sass"></i>
+          <i class="fab fa-css3"></i>
+        </section>
+      </section>
+      <section class="blogs">
+        <h1>Blogs</h1>
+        <section class="blog1">
+          <figure>
+            <img src="./assets/images/img-1.jpg" alt="image" />
+          </figure>
+          <article>
+            <h2>HTML Blog</h2>
+            <h3>A skeleton website</h3>
+            <p>
+              HTML (HyperText Markup Language) is the most basic building block
+              of the Web. It defines the meaning and structure of web content.
+              Other technologies besides HTML are generally used to describe a
+              web page's appearance/presentation (CSS) or functionality/behavior
+              (JavaScript). "Hypertext" refers to links that connect web pages
+              to one another, either within a single website or between
+              websites. Links are a fundamental aspect of the Web. By uploading
+              content to the Internet and linking it to pages created by other
+              people, you become an active participant in the World Wide Web.
+            </p>
+            <a href="#" target="_blank">Read More..</a>
+          </article>
+        </section>
+        <section class="blog2">
+          <figure>
+            <img src="./assets/images/img-2.jpg" alt="image" />
+          </figure>
+          <article>
+            <h2>CSS Blog</h2>
+            <h3>A pretty webapp</h3>
+            <p>
+              Cascading Style Sheets (CSS) is a stylesheet language used to
+              describe the presentation of a document written in HTML or XML
+              (including XML dialects such as SVG, MathML or XHTML). CSS
+              describes how elements should be rendered on screen, on paper, in
+              speech, or on other media. CSS is among the core languages of the
+              open web and is standardized across Web browsers according to W3C
+              specifications. Previously, development of various parts of CSS
+              specification was done synchronously, which allowed versioning of
+              the latest recommendations. You might have heard about CSS1,
+              CSS2.1, CSS3. However, CSS4 has never become an official version.
+            </p>
+            <a href="#" target="_blank">Read More..</a>
+          </article>
+        </section>
+        <section class="blog3">
+          <figure>
+            <img src="./assets/images/img-3.jpg" alt="image" />
+          </figure>
+          <article>
+            <h2>JS Blog</h2>
+            <h3>A functional webapp</h3>
+            <p>
+              JavaScript (JS) is a lightweight, interpreted, or just-in-time
+              compiled programming language with first-class functions. While it
+              is most well-known as the scripting language for Web pages, many
+              non-browser environments also use it, such as Node.js, Apache
+              CouchDB and Adobe Acrobat. JavaScript is a prototype-based,
+              multi-paradigm, single-threaded, dynamic language, supporting
+              object-oriented, imperative, and declarative (e.g. functional
+              programming) styles. Read more about JavaScript. This section is
+              dedicated to the JavaScript language itself, and not the parts
+              that are specific to Web pages or other host environments. For
+              information about API specifics to Web pages, please see Web APIs
+              and DOM.
+            </p>
+            <a href="#" target="_blank">Read More..</a>
+          </article>
+        </section>
+      </section>
+      <section class="contactus">
+        <h1>Contact us</h1>
+        <form>
+          <input
+            style="display: block"
+            type="text"
+            name="name"
+            placeholder="Name..."
+          />
+          <input
+            style="display: block"
+            type="text"
+            name="email"
+            placeholder="Email..."
+          />
+          <textarea name="textarea" placeholder="Messages"></textarea>
+        </form>
+        <button class="btn">Submit!</button>
+      </section>
+    </main>
+    <footer>
+      <section class="copyright"><p>&copy; 2022 Sujan Raj Shrestha</p></section>
+      <section class="socialmedia">
+        <a href="#" aria-label="facebook icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" aria-label="instagram icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" aria-label="twitter icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="linkedin icon"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#" aria-label="youtube icon"><i class="fab fa-youtube"></i></a>
+      </section>
+    </footer>
   </body>
 </html>
